@@ -245,8 +245,8 @@ form input:focus { border-color: var(--gh-blue); outline: none; box-shadow: 0 0 
 /* Mobile Optimizations */
 @media (max-width: 1024px) {
     .pill-row-lp, .service-cards-lp { grid-template-columns: 1fr; }
-    .hero-lp-content { flex-direction: column; text-align: center; }
-    .hero-lp-img { margin-top: 48px; }
+    .hero-lp-content { flex-direction: column-reverse; text-align: center; }
+    .hero-lp-img { margin-bottom: 48px; }
 }
 @media (max-width: 768px) {
     .nav-link:not(.nav-btn) { display: none; }
