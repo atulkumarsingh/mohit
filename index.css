@@ -243,10 +243,11 @@ form input, form textarea {
 form input:focus { border-color: var(--gh-blue); outline: none; box-shadow: 0 0 0 3px rgba(88, 166, 255, 0.2); }
 
 /* Mobile Optimizations */
-@media (max-width: 1024px) {
+@media (max-width: 1100px) {
     .pill-row-lp, .service-cards-lp { grid-template-columns: 1fr; }
-    .hero-lp-content { flex-direction: column-reverse; text-align: center; }
-    .hero-lp-img { margin-bottom: 48px; }
+    .hero-lp-content { flex-direction: column; text-align: center; gap: 32px; }
+    .hero-lp-img { order: -1; margin-bottom: 0; }
+    .hero-lp-text p { margin-left: auto; margin-right: auto; }
 }
 @media (max-width: 768px) {
     .nav-link:not(.nav-btn) { display: none; }
