@@ -245,8 +245,13 @@ form input:focus { border-color: var(--gh-blue); outline: none; box-shadow: 0 0 
 /* Mobile Optimizations */
 @media (max-width: 1100px) {
     .pill-row-lp, .service-cards-lp { grid-template-columns: 1fr; }
-    .hero-lp-content { flex-direction: column; text-align: center; gap: 32px; }
-    .hero-lp-img { order: -1; margin-bottom: 0; }
+    .hero-lp-content { display: flex; flex-direction: column; text-align: center; gap: 40px; }
+    /* Interleaving Logic */
+    .hero-lp-text { display: contents; } 
+    .hero-top-heading { order: 1; }
+    .hero-lp-img { order: 2; margin-bottom: 0; }
+    .hero-lp-body { order: 3; }
+    
     .hero-lp-text p { margin-left: auto; margin-right: auto; }
 }
 @media (max-width: 768px) {
